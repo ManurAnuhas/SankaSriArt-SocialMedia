@@ -199,11 +199,12 @@ body {
 }
 
 .welcome-logo {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   border-radius: 50%;
   display: block;
+  transform: scale(0.9);
 }
 
 .welcome-ring {
@@ -443,15 +444,15 @@ body {
 }
 
 .brand-logo {
-  width: 92%;
-  height: 92%;
+  width: 85%;
+  height: 85%;
   object-fit: contain;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  transform: scale(1.05);
+  transform: scale(0.88);
 }
 
 .avatar-inner:hover .brand-logo {
-  transform: scale(1.18);
+  transform: scale(0.96);
 }
 
 .brand-title {
@@ -1428,6 +1429,21 @@ body {
     border-radius: 24px;
     gap: 18px;
     background: rgba(14, 16, 22, 0.95);
+  }
+
+  /* ── Top Bar: icon-only on mobile ── */
+  .top-btn span {
+    display: none;
+  }
+
+  .top-btn {
+    padding: 9px 12px;
+    gap: 0;
+    font-size: 1rem;
+  }
+
+  .card-top-bar {
+    gap: 6px;
   }
 
   .avatar-glow-ring {
