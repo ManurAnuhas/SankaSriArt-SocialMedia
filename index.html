@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanka Sri Art | Photography & Event Management</title>
+  <meta name="description" content="Sanka Sri Art - Professional Photography & Event Management in Sri Lanka. Graduation, Weddings, Birthdays, Corporate Events & Cinematography.">
+  <meta name="keywords" content="Sanka Sri Art, Photography Sri Lanka, Event Management, Graduation Photography, Wedding Events, Corporate Events">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo-badge.png">
+
+  <!-- Google Fonts: Syne & Montserrat for modern punchy headings, Plus Jakarta Sans for UI, Cinzel for brand luxury -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- QRCode.js Library & Confetti -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cinematic Welcome Splash Screen -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-bg-glow"></div>
+    <div class="welcome-content">
+      <div class="welcome-logo-box">
+        <img src="assets/logo-badge.png" alt="Sanka Sri Art Logo" class="welcome-logo">
+        <div class="welcome-ring"></div>
+      </div>
+      <h2 class="welcome-title">SANKA SRI ART</h2>
+      <p class="welcome-tagline-hero">Turning Your Special Moments into Timeless Memories.</p>
+
+      <div class="welcome-loader">
+        <div class="welcome-progress-bar">
+          <div class="welcome-progress-fill" id="welcomeProgressFill"></div>
+        </div>
+        <span class="welcome-status-text" id="welcomeStatusText">Crafting Experiences...</span>
+      </div>
+
+      <button class="welcome-enter-btn" id="welcomeEnterBtn">
+        <span>Enter Experience</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Background Ambience with Red & White Lights -->
+  <div class="bg-fx">
+    <div class="orb orb-red"></div>
+    <div class="orb orb-white"></div>
+    <div class="orb orb-red-2"></div>
+    <div class="ambient-grid"></div>
+  </div>
+
+  <main class="main-wrapper">
+    <!-- Premium Card Container -->
+    <div class="glass-card" id="mainCard">
+
+      <!-- Top Action Bar (Scan QR, Status Pill & Share) -->
+      <header class="card-top-bar">
+        <button class="top-btn" id="openQrBtn" title="Show QR Code">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>Scan QR</span>
+        </button>
+        <span class="top-brand-pill">
+          <span class="pulse-dot"></span> Bookings Open
+        </span>
+        <button class="top-btn" id="shareBtn" title="Share Profile">
+          <i class="fa-solid fa-share-nodes"></i>
+          <span>Share</span>
+        </button>
+      </header>
+
+      <!-- Brand Hero Card (Curved Arch matching Flyer header) -->
+      <section class="brand-header">
+        <div class="avatar-glow-ring">
+          <div class="avatar-inner avatar-white-bg">
+            <img src="assets/logo-badge.png" alt="Sanka Sri Art Logo" class="brand-logo" id="brandLogo">
+          </div>
+        </div>
+
+        <h1 class="brand-title">SANKA SRI ART</h1>
+        <div class="brand-tagline-badge">
+          <span>PHOTOGRAPHY</span>
+          <span class="badge-separator">✕</span>
+          <span>EVENT MANAGEMENT</span>
+        </div>
+        <p class="brand-quote">
+          "Your Achievement. Your Pride. Our Photography."
+        </p>
+      </section>
+
+      <!-- Quick Action Connect Cards (WhatsApp, Web, Facebook) - PLACED AT THE TOP -->
+      <section class="links-section">
+        <h4 class="section-heading">Connect With Us</h4>
+
+        <!-- WhatsApp Direct Contact -->
+        <a href="https://wa.me/94766025459" target="_blank" rel="noopener noreferrer" class="action-card link-whatsapp">
+          <div class="card-icon-wrap icon-wa">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="card-info">
+            <div class="card-info-header">
+              <span class="card-label">WhatsApp Direct</span>
+              <span class="instant-pill">Instant Chat</span>
+            </div>
+            <span class="card-subtitle">+94 76 602 5459 (Inquiries & Bookings)</span>
+          </div>
+          <div class="arrow-wrap">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="card-shine"></div>
+        </a>
+
+        <!-- Official Website -->
+        <a href="http://www.sankasriart.com/" target="_blank" rel="noopener noreferrer" class="action-card link-website">
+          <div class="card-icon-wrap icon-web">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="card-info">
+            <div class="card-info-header">
+              <span class="card-label">Official Website</span>
+              <span class="live-pill">Portfolio</span>
+            </div>
+            <span class="card-subtitle">www.sankasriart.com</span>
+          </div>
+          <div class="arrow-wrap">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+          <div class="card-shine"></div>
+        </a>
+
+        <!-- Facebook Official Page -->
+        <a href="https://www.facebook.com/sankasriart.lk" target="_blank" rel="noopener noreferrer" class="action-card link-facebook">
+          <div class="card-icon-wrap icon-fb">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="card-info">
+            <div class="card-info-header">
+              <span class="card-label">Facebook Page</span>
+              <span class="community-pill">Community</span>
+            </div>
+            <span class="card-subtitle">facebook.com/sankasriart.lk</span>
+          </div>
+          <div class="arrow-wrap">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+          <div class="card-shine"></div>
+        </a>
+
+      </section>
+
+      <!-- Services Section Header & Tabs -->
+      <div class="services-header-row">
+        <h4 class="section-heading">Our Services</h4>
+        <div class="service-tabs">
+          <button class="tab-btn active" data-tab="all">
+            <i class="fa-solid fa-shapes"></i> All
+          </button>
+          <button class="tab-btn" data-tab="photography">
+            <i class="fa-solid fa-camera"></i> Photography
+          </button>
+          <button class="tab-btn" data-tab="events">
+            <i class="fa-solid fa-champagne-glasses"></i> Events
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Feature 1: Graduation Photography (Clean layout without images) -->
+      <section class="service-banner-card photography-card" id="tabPhoto">
+        <div class="banner-badge grad-badge">Photography</div>
+        <div class="service-clean-details">
+          <div class="service-header-with-icon">
+            <div class="service-icon-bubble bubble-red">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <h3 class="banner-title">
+                <span class="white-text">GRADUATION</span>
+                <span class="accent-text-red">PHOTOGRAPHY</span>
+              </h3>
+              <p class="banner-motto">Celebrate Your Achievement. Capture the Memories.</p>
+            </div>
+          </div>
+
+          <ul class="bullet-list-grid">
+            <li><i class="fa-solid fa-circle-check"></i> Graduation Portraits</li>
+            <li><i class="fa-solid fa-circle-check"></i> Individual & Group Photography</li>
+            <li><i class="fa-solid fa-circle-check"></i> Graduation Day Coverage</li>
+            <li><i class="fa-solid fa-circle-check"></i> Creative & Professional Portraits</li>
+            <li><i class="fa-solid fa-circle-check"></i> Family & Friends Moments</li>
+          </ul>
+
+          <a href="https://wa.me/94766025459?text=Hi%20Sanka%20Sri%20Art,%20I%20would%20like%20to%20book%20a%20Graduation%20Photoshoot!" target="_blank" class="book-banner-btn book-red">
+            <i class="fa-solid fa-calendar-check"></i> Book Graduation Photoshoot Today!
+          </a>
+        </div>
+      </section>
+
+      <!-- Service Feature 2: Event Management (Clean layout without images) -->
+      <section class="service-banner-card events-card" id="tabEvents">
+        <div class="banner-badge event-badge">Event Management</div>
+        <div class="service-clean-details">
+          <div class="service-header-with-icon">
+            <div class="service-icon-bubble bubble-red">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <div>
+              <h3 class="banner-title">
+                <span class="accent-text-red">EVENT</span>
+                <span class="white-text">MANAGEMENT</span>
+              </h3>
+              <p class="banner-motto">We Make Your Special Moments Unforgettable!</p>
+            </div>
+          </div>
+
+          <ul class="bullet-list-grid">
+            <li><i class="fa-solid fa-circle-check"></i> Wedding Events</li>
+            <li><i class="fa-solid fa-circle-check"></i> Birthday Parties</li>
+            <li><i class="fa-solid fa-circle-check"></i> Engagement Ceremonies</li>
+            <li><i class="fa-solid fa-circle-check"></i> Anniversary Celebrations</li>
+            <li><i class="fa-solid fa-circle-check"></i> Corporate Events</li>
+            <li><i class="fa-solid fa-circle-check"></i> All Special Occasions</li>
+          </ul>
+
+          <p class="event-craft-tag">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Creative Planning • Elegant Decorations • Memorable Experiences
+          </p>
+
+          <a href="https://wa.me/94766025459?text=Hi%20Sanka%20Sri%20Art,%20I%20would%20like%20to%20inquire%20about%20Event%20Management%20services!" target="_blank" class="book-banner-btn book-red">
+            <i class="fa-solid fa-calendar-days"></i> Inquire Event Planning
+          </a>
+        </div>
+      </section>
+
+      <!-- Prominent Callout Banner from Flyer (Red Number & URL) -->
+      <div class="flyer-callout-footer">
+        <span class="callout-label">MORE INFORMATION & BOOKINGS</span>
+        <a href="tel:+94766025459" class="callout-phone-big">
+          <i class="fa-solid fa-phone-volume"></i> +94 76 602 5459
+        </a>
+        <a href="http://www.sankasriart.com/" target="_blank" class="callout-web">
+          www.sankasriart.com
+        </a>
+      </div>
+
+      <!-- Bottom Action Row: Save Contact & Direct Call -->
+      <div class="bottom-action-group">
+        <button class="primary-btn red-gradient-btn" id="downloadVcardBtn">
+          <i class="fa-solid fa-address-card"></i>
+          <span>Save Contact Card</span>
+        </button>
+        <a href="tel:+94766025459" class="secondary-btn" id="callDirectBtn" title="Call Now">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <footer class="card-footer">
+        <p class="banner-footer-callout">Turning Your Special Moments into Timeless Memories.</p>
+        <p class="copyright">© 2026 Muxx Digital. All Rights Reserved.</p>
+        <p class="craft-tag">Photography & Event Management • Sri Lanka</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- High-Tech / Luxury QR Code Modal with Laser Scan -->
+  <div class="modal-backdrop" id="qrModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeQrBtn" aria-label="Close QR Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-badge-icon">
+        <img src="assets/logo-badge.png" alt="Sanka Sri Art Icon" class="modal-logo-mini">
+      </div>
+
+      <h2 class="modal-title">SCAN TO CONNECT</h2>
+      <p class="modal-desc">Scan with your smartphone camera to access Sanka Sri Art digital card & portfolio.</p>
+
+      <!-- QR Frame with Futuristic Red Laser Scan Animation -->
+      <div class="qr-presentation">
+        <div class="qr-corners">
+          <span class="corner c-tl"></span>
+          <span class="corner c-tr"></span>
+          <span class="corner c-bl"></span>
+          <span class="corner c-br"></span>
+        </div>
+        <!-- Laser scanner bar -->
+        <div class="scan-laser"></div>
+        <!-- QR Code Canvas container -->
+        <div id="qrcode" class="qrcode-wrapper"></div>
+      </div>
+
+      <!-- Custom URL Input & Generator -->
+      <div class="qr-url-box">
+        <label for="customQrUrl" class="qr-url-label">QR Target URL:</label>
+        <div class="qr-input-group">
+          <input type="text" id="customQrUrl" value="http://www.sankasriart.com/" placeholder="Enter target URL..." spellcheck="false">
+          <button id="updateQrBtn" class="pill-btn">Update</button>
+        </div>
+        <p class="qr-tip-text"><i class="fa-solid fa-wand-magic-sparkles"></i> Customize URL to your domain or WhatsApp link anytime.</p>
+      </div>
+
+      <!-- QR Actions -->
+      <div class="modal-actions">
+        <button class="action-pill-btn" id="downloadQrBtn">
+          <i class="fa-solid fa-download"></i>
+          <span>Download QR</span>
+        </button>
+        <button class="action-pill-btn" id="copyLinkBtn">
+          <i class="fa-solid fa-copy"></i>
+          <span id="copyLinkText">Copy URL</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-box" id="toastBox">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMsg">Notification message</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
