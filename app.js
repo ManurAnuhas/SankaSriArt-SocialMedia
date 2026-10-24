@@ -224,27 +224,27 @@ document.addEventListener('DOMContentLoaded', () => {
   if (welcomeScreen) {
     let progress = 0;
     const progressInterval = setInterval(() => {
-      progress += 5;
+      progress += 6;
       if (welcomeProgressFill) {
         welcomeProgressFill.style.width = `${Math.min(progress, 100)}%`;
       }
 
-      if (progress >= 50 && welcomeStatusText) {
-        welcomeStatusText.textContent = 'Welcome to Sanka Sri Art...';
+      if (progress >= 45 && welcomeStatusText) {
+        welcomeStatusText.textContent = 'Welcome to Sanka Sri Art';
       }
 
       if (progress >= 100) {
         clearInterval(progressInterval);
-        setTimeout(dismissWelcomeScreen, 300);
+        setTimeout(dismissWelcomeScreen, 220);
       }
-    }, 40);
+    }, 32);
 
     function dismissWelcomeScreen() {
       if (!welcomeScreen || welcomeScreen.classList.contains('hidden')) return;
       welcomeScreen.classList.add('fade-out');
       setTimeout(() => {
         welcomeScreen.classList.add('hidden');
-      }, 650);
+      }, 550);
     }
 
     welcomeEnterBtn?.addEventListener('click', () => {
