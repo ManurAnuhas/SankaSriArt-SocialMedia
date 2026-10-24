@@ -464,24 +464,39 @@ body {
   text-shadow: 0 2px 14px rgba(255, 255, 255, 0.15);
 }
 
-.brand-tagline-badge {
+.brand-services-capsule {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  background: #12151f;
-  border: 1px solid rgba(229, 9, 20, 0.4);
-  padding: 5px 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(229, 9, 20, 0.28);
+  padding: 6px 16px;
   border-radius: 100px;
-  font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: #ffffff;
   margin-bottom: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.badge-separator {
-  color: var(--red-primary);
-  font-size: 0.7rem;
+.capsule-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #f1f5f9;
+}
+
+.capsule-item i {
+  color: #ff3b44;
+  font-size: 0.75rem;
+}
+
+.capsule-sep {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
 }
 
 .brand-quote {
