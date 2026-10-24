@@ -468,35 +468,38 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px 12px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(229, 9, 20, 0.28);
-  padding: 6px 16px;
+  padding: 6px 14px;
   border-radius: 100px;
   margin-bottom: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  max-width: 100%;
 }
 
 .capsule-item {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.74rem;
+  gap: 5px;
+  font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #f1f5f9;
+  white-space: nowrap;
 }
 
 .capsule-item i {
   color: #ff3b44;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
 }
 
 .capsule-sep {
   color: rgba(255, 255, 255, 0.25);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .brand-quote {
@@ -1445,14 +1448,34 @@ body {
   }
 
   .brand-services-capsule {
-    padding: 5px 12px;
-    gap: 6px 10px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    padding: 5px 10px;
+    gap: 5px;
     margin-bottom: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .brand-services-capsule::-webkit-scrollbar {
+    display: none;
   }
 
   .capsule-item {
+    font-size: 0.62rem;
+    letter-spacing: 0.3px;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  .capsule-item i {
+    font-size: 0.65rem;
+  }
+
+  .capsule-sep {
     font-size: 0.68rem;
-    letter-spacing: 0.4px;
   }
 
   .brand-quote {
