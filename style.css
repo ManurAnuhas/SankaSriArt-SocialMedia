@@ -483,22 +483,16 @@ body {
 .capsule-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #f1f5f9;
   white-space: nowrap;
 }
 
-.capsule-item i {
-  color: #ff3b44;
-  font-size: 0.72rem;
-}
-
 .capsule-sep {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(229, 9, 20, 0.7);
   font-size: 0.75rem;
 }
 
